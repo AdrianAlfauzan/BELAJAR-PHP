@@ -1,0 +1,76 @@
+Sintaks PHP
+REMEMBER : SINTAKS PHP SANGAT SENSITIF! LIHAT TITIK DAN KOMANYA
+
+// Standar Output
+-   echo,print --> ini keduanya sama
+contoh : 
+echo "YT : CallMeLeon";
+print "YT : CallMeLeon";
+
+-   print_r --> khusus mencetak isi array
+contoh : 
+print_r ("YT : CallMeLeon");
+
+-   var_dump --> untuk melihat isi dari variabel
+contoh : 
+var_dump ("YT : CallMeLeon");
+
+print_r dan var_dump biasnya digunakan untuk debugging.
+
+-----------------------
+// echo "YT : CallMeLeon ";
+// print_r("HALO ADRIAN ");
+// var_dump ("YT : CallMeLeon ");
+
+// Penulisan sintaks PHP
+// 1. PHP di dalam html
+// 2. html di dalam PHP > penulisan yang ini tidak di sarankan
+
+// Varibael dan Tipe Data 
+// Varibael -> tidak boleh di awali dengan angka, tapi boleh mengandung angka
+
+[+] Mengoutputkan sebuah Varibael
+*PERHATIKAN TANDA KUTIP!
+
+DIPERBOLEHKAN :
+$nama = "adrian";
+echo "Halo, nama saya $nama"
+output ==> adrian
+
+TIDAK DIPERBOLEHKAN :
+$nama = "adrian";
+echo 'Halo, nama saya $nama'
+output ==> $nama
+
+[+]OPERATOR ARITMATIKA
+//*,/,+,-
+// $x = 10
+// $y = 10
+// echo $x - $y;
+
+[+] PENGGABUNGAN STRING / CONCATENATION / CONCAT
+// Symbolnya dengan tanda = .
+
+$namadepan = "adrian";
+$namabelakang = "alfauzan";
+$namadepan . $namabelakang;
+
+[+] OPERATOR ASSIGNMENT
+// = , += , -= , *= , /+ , %= .=,!=
+$x = 1;
+$x += 5;
+echo $x;
+--> ini sama dengan 1 ditambah sama dengan 6 
+
+[+] OPERATOR PERBANDINGAN
+// <, >, <=, >=, ==
+var_dump(1 < 5);
+
+[+] IDENTITAS
+// ===, !==
+var_dump (1 === "1);
+
+[+] OPERATOR LOGIKA
+// &&, || , !
+$x = 10;
+var_dump($x < 20 && $x %2 == 0);

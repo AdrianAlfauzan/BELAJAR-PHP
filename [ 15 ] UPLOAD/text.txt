@@ -1,0 +1,5 @@
+FILE HANDLING YANG AKAN DI PELAJARI DI SERI KALI INI :
+1. <input type='file'...
+2. enctype
+3. $_FILES
+4. move_uploaded_file

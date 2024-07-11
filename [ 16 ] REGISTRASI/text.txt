@@ -1,0 +1,9 @@
+LOGIN SYSTEM :
+- Registrasi
+- Login
+- Session
+- Cookie
+
+FITUR REGISTRASI :
+- Membuat tabel user
+- Enkripsi Password

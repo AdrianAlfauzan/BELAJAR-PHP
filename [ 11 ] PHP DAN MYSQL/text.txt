@@ -1,0 +1,23 @@
+UNTUK MENGHUBUNGKAN HALAMAN WEB DGN PHP :
+1. Ekstensi MySQL (jgn pakai ini, karena banyak celahnya)
+2. Ekstensi MySQLi (improve) --> ini yang akan kita pakai
+3. PDO (PHP Data Object) --> kita bisa terhubung ke banyak database
+
+
+jgn pakai mysql_connect, karena ini versi jadul.
+pakai mysqli_connect, ini versi terbaru.
+
+// ambil data(fetch) mahasiswa dari object result 
+// ada 4 cara mengambil datanya :
+// 1. mysqli_fetch_row() --> mengembalikkan array numerik, hanya dengan index
+// 2. mysqli_fetch_assoc() --> mengembalikkan array numerik, hanya dengan string
+// 3. mysqli_fetch_array() --> mengembalikkan keduanya, bisa index bisa string, hanya saja menjadi double
+// 4. mysqli_fetch_object() --> Mengembalikan object
+// cara nya ini pakai panah dan apa nama fieldnya
+
+
+[+] Numerik : 
+Numerik adalah sebuah simbol yang merepresentasikan sebuah nomor (angka) atau bilangan. 
+Di dalam sistem numerik ini, penulisan angka berdasarkan posisi dan basis. 
+Posisi suatu angka dalam sistem ini menentukan nilai dari bilangan yang diwakilinya. 
+Maka notasi yang digunakan disebut notasi posisional.

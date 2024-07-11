@@ -1,0 +1,34 @@
+function adalah potongan program atau baris - baris kode
+yang kita buat untuk mempermudah kita pada saat memprogram.
+kode program tadi bisa kita kasih nama, lalu bisa kita panggil berulang-ulang.
+
+- built-in-function --> fungsi yang dimiliki PHP
+- user-defined-function -->. fungsi yang kita buat sendiri
+
+# [+] built-in-function
+ada beberapa fungsi yang digunakan :
+- Date/Time :
+1. time()
+2. date() --> ini tuh memanggil function yang telah ada di PHP.
+3. mktime()
+4. strtotime()
+
+- String :
+1. strlen() --> untuk menghitung panjang sebuah String
+2. strcmp() --> untuk membandingkan sebuah String
+3. explode() --> memecah sebuah String menjadi array
+4. htmlspecialchars()
+// INI SEMUA AKAN DI PELAJARI SETELAH METODE REQUESTS!
+
+
+- Utility : --> fungsi bantuan
+1. var_dump() --> untuk mencetak isi dari variabel,array , objek
+2. isset() --> untuk mengecek apakah sebuah variabel sudah pernah dibikin atau belum? 
+            // jadi isset ini akan menghasilkan boolean (true / false).
+            // kita kita belum pernah bikin sebuah variabel, maka isset akan bernilai false.
+3. empty() --> untuk mengecek apakah variabel yang ada kosong atau tidak.
+4. die() --> untuk memberhentikan program kita.
+5. sleep() --> untuk memberhentikan sementara
+
+# [+] user-defined-function
+

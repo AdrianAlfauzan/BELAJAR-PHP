@@ -1,0 +1,26 @@
+PHP to PDF.
+
+PDF Report memungkinkan kita untuk :
+- Laporan
+- Kutansi/invoice/faktur
+- Form
+- dll
+
+cara membuat PDF :
+- Memanfaatkan Fitur bawaan Browser.
+- Libary PHP :
+    - FPDF
+    - mPDF --> Akan kita pelajari.
+    - DOMPDF
+    - dll
+
+===========================================================================================
+
+SYARAT : 
+mpdf : https://mpdf.github.io/installation-setup/installation-v7-x.html
+install composer : https://getcomposer.org/
+
+jika sudah install composer, pindahkan cmd ke folder tujuan.
+lalu, ketik cmd :
+composer require mpdf/mpdf 
+contoh : C:\xampp\htdocs\BELAJAR_PHP\[ 23 ] PDF REPORTING> composer require mpdf/mpdf

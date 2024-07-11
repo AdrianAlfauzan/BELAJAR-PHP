@@ -1,0 +1,12 @@
+ARRAY --> SEBUAH VARIABEL YANG DAPAT MEMILIKI BANYAK NILAI
+// array --> sebuah variabel yang memiliki banyak nilai
+// elemen pada array boleh memiliki tipe data yang berbeda
+// definisi array --> pasangan antara key dan value
+// key - nya adalah index yang dimulai dari 0
+
+
+[+] menggunakan  foreach :
+        <!-- Cara foreach -->
+        <!-- <?php foreach($mahasiswa as $mhs) : ?>
+            <li> <?php echo $mhs; ?></li>
+        <?php endforeach ?> -->

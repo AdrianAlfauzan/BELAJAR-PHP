@@ -1,0 +1,35 @@
+// DATABASE
+
+Apa itu Data ? Data adalah representasi FAKTA di dunia nyata.
+contoh : nama , judul buku, no ktp, harga, foto, dokumen,video, musik dll.
+
+biasanya data ini sering terkait, contohnya BUKU :
+- Judul buku
+- Pengarang
+- Penerbit
+- Halaman
+- dll...
+
+Bagaimana kita menyimpan dan Mengelola Data ini?
+Kita bisa menggunakan DATABASE!
+
+Apa itu DATABASE?
+
+
+Contoh - Contoh DBMS / DATABASE MANAGEMENT SYSTEM :
+- Oracle
+- MySql
+- SQL Server
+- PostgreSQL
+- MongoDB
+ITU SEMUA ADALAH SOFTWARE UNTUK MENGELOLA UNTUK MENGELOLA DATABASE
+
+DI DATABASE JIKA DALAM TABEL ADA YANG NAMANYA :
+- RECORD --> Ini sebuah baris
+- FIELD  --> Ini sebuah kolom
+
+di dalam DATABASE kita membutuhkan sebuah PRYMARY KEY :
+[+] PRYMARY KEY ADALAH SEBUAH DATA, YANG DAPAT MEREPRESENTASIKAN SATU BARIS
+RECORD SECARA UNIK.
+MAKSUD DARI UNIK ADALAH TIDAK BOLEH ADA DATA YANG SAMA DALAM TABEL ITU SENDIRI.
+[+] AUTO INCREMENT --> UNTUK MENAMBAHKAN SATU PERSATU DARI SETIAP RECORD YANG MASUK.

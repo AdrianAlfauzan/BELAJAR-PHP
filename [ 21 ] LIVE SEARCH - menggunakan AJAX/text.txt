@@ -1,0 +1,10 @@
+AJAX - ASYNCROHONUS JAVASCRIPT AND XML.
+
+Ajax adalah gabungan dari teknologi pengembangan aplikasi web 
+yang membuat aplikasi web menjadi lebih responsif terhadap interaksi pengguna.
+
+XMLHttpRequest() ini yang akan mengelola teknik AJAX.
+
+syarat menggunakan AJAX :
+- Memahami JAVASCRIPT Dasar.
+- Memahami DOM (Document Object Model)

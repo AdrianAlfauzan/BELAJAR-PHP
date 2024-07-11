@@ -1,0 +1,33 @@
+Superglobals --> Variabel yang dimiliki PHP, Variabel nya ini spesial
+
+- Variabel scope (lingkup variabel) --> mengacu pada wilayah di mana 
+suatu variabel dapat diakses dan digunakan dalam sebuah program. 
+Lingkup ini menentukan di mana variabel dapat dilihat atau dimanipulasi.
+
+- Variabel Superglobals --> variabel - variabel yang bisa kita akses dimanapun dan kapanpun.
+Macam - Macam Superglobals yang dimiliki PHP :
+- $_GET
+- $_POST
+- $_REQUEST
+- $_SESSION
+- $_COOKIE
+- $_SERVER
+- $_ENV
+
+RAHASIA DARI SEMUA VARIABEL ITU :
+DARI SEMUA VARIABEL SUPERGLOBALS INI TYPENYA ADALAH "ARRAY ASSOCIATIVE"
+*REMEMBER :
+ARRAY ASSOCIATIVE INI TIDAK DAPAT DICETAK MENGGUNAKAN
+"echo" / "print"
+WAJIB DI CETAK MENGGUNAKAN : var_dump / print_r
+
+
+
+DI EPISODE KALI INI KITA AKAN BAHAS HANYA 4 :
+- $_GET
+- $_POST
+- $_SESSION
+- $_COOKIE
+
+// Isset -->  Apakah data ini udah pernah dibikin atau belum
+// !isset --> belum dibikin

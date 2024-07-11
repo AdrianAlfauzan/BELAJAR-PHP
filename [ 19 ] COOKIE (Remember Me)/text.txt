@@ -1,0 +1,21 @@
+Login System :
+- Registrasi
+- Login
+- Session
+- Cookie
+
+Apa itu COOKIE? 
+COOKIE itu mirip seperti SESSION, jadi dia adalah informasi yang bisa kita akses di halaman
+web kita. akan tetapi bedanya, 
+COOKIE itu disimpan di browser/di Client. --> Client itu bisa memanipulasi (Bisa menambah COOKIE baru,Edit dan Hapus)
+Sedangkan SESSION informasi yang disimpan di Server.
+
+Penggunaan COOKIE :
+- Mengenali user (bisa tahu siapa yang sedang akses web)
+- shopping cart
+- Personalisasi --> untuk mengetahui preferensi atau perilaku dari seorang user, ini bisa dipakai oleh Iklan.
+1 hal yang harus di pahami dari Cookie, ini bisa jadi celah keamanan.
+
+cara buat Cookie :
+- Gunakan $_COOKIE
+- Gunakan function setcookie()

@@ -1,0 +1,17 @@
+SESSION adalah "Mekanisme penyimpanan informasi ke dalam variabel agar bisa
+digunakan di LEBIH DARI SATU HALAMAN."
+
+informasi PADA SESSION itu disimpan di SERVER.
+SESSION ini sangat erat kaitannya dengan COOKIE!!!
+jadi, SESSION disimpannya di SERVER.
+Sedangkan COOKIE disimpannya di CLIENT.
+
+SYARAT UNTUK MENGISIKAN DATA KE $_SESSION :
+[+] jalankan session_start
+
+
+ada beberapa session yang ditampilkan biasanya dalam logout.
+1. session_start(); --> memulai session
+2. session_destroy(); --> untuk menghilangkan session
+3. session_unset(); --> untuk memastikan sessionnya itu hilang
+4. $_SESSION = []; --> meyakinkan lebih lagi sessionnya itu hilang.

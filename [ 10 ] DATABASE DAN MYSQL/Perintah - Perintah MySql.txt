@@ -1,0 +1,108 @@
+##### Urutan Membuat DATABASE!!!! #####
+
+[1] Command : C:\xampp\mysql\bin> .\mysql -u root -p// koneksi ke database
+// 1. nama host ==> localhost
+// 2. username ==> root
+// 3. password ==> (kosong)
+// 4. nama databasenya
+[2] Melihat isi tabel - tabel DATABASE:
+SYNTAX :
+show databases;
+
+[3] CREATE DATABASE:
+SYNTAX :
+create database [nama_database];
+Nama database : phpdasar
+
+[4] Menggunakan database untuk di isi databasenya :
+SYNTAX :
+use [nama_database];
+
+[5] Membuat Tabel DATABASE :
+Template :
+create table mahasiswa( 
+id int primary key auto_increment,
+nama varchar(100),
+nrp char(9),
+email varchar(100),
+jurusan varchar(100),
+gambar varchar(100)
+);
+
+[6] Memperlihatkan isi tabel di dalam database yang sudah dibuat :
+SYNTAX :
+show tables;
+
+##### TUTORIAL CRUD : #####
+[+] Cara Insert / CREATE :
+# Didalam values masukkan data - datanya, 
+# harus sesuai dengan field yang ada di dalamnya.
+# Id nya di isi ga? tidak perlu, karena sudah otomatis di isi oleh mysql nya
+# jadi hanya perlu beri tanda koma atas saja.
+SYNTAX :
+insert into mahasiswa values ('','Adrian Musa Alfauzan',2250081020,'Stalkerxstalk@gmail.com','Informatika','Ai.png');
+Pembacaannya --> Masukkan ke dalam tabel mahasiswa dengan nilai - nilainya (...)
+
+[+] Untuk Melihat isi tabel / READ:
+symbol bintang * --> semua / all.
+SYNTAX :
+1. select * from mahasiswa;
+Pembacaannya --> pilih semua field dari tabel mahasiswa;
+2. select nrp from mahasiswa;
+Pembacaannya --> pilih field nrp dari tabel mahasiswa;
+
+# Bagaimana jika ingin menampilkan isi tabel, akan tetapi memanggil dari field tertentu saja,
+# contohnya menampilkan dari nrp, dari email dll ???
+3. select * from mahasiswa where nrp = '2250081020';
+Pembacaannya --> pilih semua field dari tabel mahasiswa yang dimana nrp nya itu = '2250081020';
+
+[+] Mengubah data / UPDATE :
+SYNTAX :
+update mahasiswa set jurusan = 'Teknik Sepakbola' where id = 2;
+Pembacaannya --> update tabel mahasiswa, yang di set field jurusan menjadi 'Teknik Sepakbola' yang dimana id nya sama dengan 2
+
+[+] Menghapus data / DELETE :
+SYNTAX :
+delete from mahasiswa where id = 3;
+Pembacaannya --> delete dari tabel mahasiswa yang dimana id nya itu sama dengan 3.
+
+Bonus :
+[+] Menghapus database :
+SYNTAX :
+drop database [nama_database];
+
+[+] Menambahkan Data :
+SYNTAX
+"INSERT INTO mahasiswa VALUES ('','$nama','$nrp','$jurusan','$email','$gambar' DAN LAIN LAIN)";
+
+[+] Menghapus tabel di dalam database yang sudah di buat :
+SYNTAX :
+drop table [nama_tabel_database];
+
+[+] Menambahkan Field :
+ALTER TABLE [nama_tabel_database] ADD COLUMN [Nama_Field] VARCHAR(100);
+
+[+] Menambahkan Data :
+INSERT INTO [nama_tabel_database] [Nama_Field] VALUES ('John Doe');
+* bagi saya ini tidak efektif. Jika ingin ubah data/menambahkan data baru,
+lebih baik pakai UPDATE. 
+
+[+] Ubah Nama Database :
+RENAME DATABASE nama_database_lama TO nama_database_baru;
+
+[+] Ubah Nama tabel Database :
+RENAME TABLE [nama_tabel_database] TO [New_nama_tabel_database];
+
+[+] Hapus Nama Field :
+ALTER TABLE [nama_tabel_database] DROP COLUMN [Nama_Field];
+
+[+] Menambah Sesuatu seperti AUTO_INCREMENT pada id :
+ALTER TABLE pengguna MODIFY COLUMN id INT AUTO_INCREMENT;
+
+[+] Membuat Searching :
+"SELECT * FROM [nama_tabel_database] WHERE nama LIKE '%$search%' OR nrp LIKE '%$search%' dan seterusnya"
+search itu ==> Key 
+contoh : <input type="text" name="search" placeholder="Masukkan Keyword Pencarian">
+nama,nrp dll ==> field yang ada di dalam tabel database. 
+sebenarnya itu bebas, mau mencari dari nama,nrp atau mencakup semuanya...
+NOTE* Membuat search di html wajib ada tag form!
